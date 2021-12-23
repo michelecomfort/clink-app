@@ -1,0 +1,17 @@
+
+.App-header {
+  background-color: #2F2F30;
+  max-height: 20vh;
+  display: flex;
+  font-family: "Architects Daughter";
+  justify-content: space-around;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.title {
+  font-weight: 500;
+  letter-spacing: 24px;
+  /* margin-left: 40px; */
+}

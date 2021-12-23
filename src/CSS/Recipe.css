@@ -1,0 +1,28 @@
+.recipe-card {
+    width: 95vw;
+    height: 70vh;
+    background-color: rgb(241, 241, 232);
+    filter: drop-shadow(5px 5px 8px gray);
+    font-family: "Architects Daughter";
+    margin: 20px auto;
+}
+
+.recipe-name {
+    font-size: 80px;
+    font-weight: 500;
+    padding: 24px 0 10px 96px;
+}
+.features,
+.orders,
+.instructions {
+    display: flex;
+}
+
+.instructions {
+    margin-left: 2%;
+}
+.features,
+.orders {
+    flex-direction: column;
+    margin: 0 6%;
+}
