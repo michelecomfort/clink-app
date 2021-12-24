@@ -1,6 +1,5 @@
 .cocktail-card {
     align-items: center;
-  
     height: 35vh;
     justify-content: space-around;
     margin: 8px 28px;
@@ -22,5 +21,4 @@
     width: 100%;
     position: absolute;
     bottom: 32px;
-    /* left: 16px */
 }

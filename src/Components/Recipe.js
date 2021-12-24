@@ -4,22 +4,28 @@ import '../CSS/Recipe.css'
 const Recipe = ({ recipe }) => {
     console.log(recipe)
     const { id, name, image, ingredients, instructions, garnish } = recipe
+    const parts = ingredients.map(ing => {
+        return <p>- {ing}</p>
+    })
+    const directions = instructions.map(ins => {
+        return <p>- {ins}</p>
+    })
     return (
         <div className='recipe-card'>
-            <h1 className='recipe-name'>{name}</h1>
-            <div className='instructions'>
-                <section className='features'>
-                    <p>features</p>
-                    <p>-</p>
-                    <p>-</p>
-                </section>
-                <section className='orders'>
-                    <p>orders</p>
-                    <p>-</p>
-                    <p>-</p>
-                </section>
-            </div>
-            <img/>
+            <section className='recipe-left-side'>
+                <h2 className='recipe-name'>{name}</h2>
+                <div className='instructions'>
+                    <section className='features'>
+                        <p className='features-heading'>features</p>
+                        <p className='steps'>{parts}</p>
+                    </section>
+                    <section className='orders'>
+                        <p className='orders-heading'>orders</p>
+                        <p className='steps'>{directions}</p>
+                    </section>
+                </div>
+            </section>
+            <img className='recipe-image'src={image}/>
         </div>
     )
 }

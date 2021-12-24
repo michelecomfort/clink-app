@@ -1,16 +1,24 @@
 .recipe-card {
+    display: flex;
     width: 95vw;
     height: 70vh;
-    background-color: rgb(241, 241, 232);
+    justify-content: space-around;
+    background-color: #FFFAFA;
     filter: drop-shadow(5px 5px 8px gray);
     font-family: "Architects Daughter";
     margin: 20px auto;
 }
 
+.recipe-left-side {
+    display: flex;
+    flex-direction: column;
+}
+
 .recipe-name {
-    font-size: 80px;
+    font-size: 64px;
     font-weight: 500;
-    padding: 24px 0 10px 96px;
+    margin-bottom: 20px;
+    padding: 16px 0 0 96px;
 }
 .features,
 .orders,
@@ -25,4 +33,20 @@
 .orders {
     flex-direction: column;
     margin: 0 6%;
+}
+
+.features-heading,
+.orders-heading {
+    filter: drop-shadow(3px 3px 3px gray);
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.steps {
+    font-size: 20px;
+    margin-top: 1px;
+}
+
+.recipe-image {
+    max-width: 32%;
 }
