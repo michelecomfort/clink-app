@@ -20,7 +20,7 @@ const recipeData =  [
             "id": 2,
             "name": "Tequila Old Fashioned",
             "image": tequilaOldFashioned,
-            "ingredients" : ["3 oz Anejo Tequilla", ".25 - .5oz Agave", "2-3 shakes Orange Bitters", "2-3 shakes Angostura Bitters"],
+            "ingredients" : ["3 oz Anejo Tequila", ".25 - .5oz Agave", "2-3 shakes Orange Bitters", "2-3 shakes Angostura Bitters"],
             "instructions": ["Shake or stir over ice"],
             "garnish": "cherry"
          },

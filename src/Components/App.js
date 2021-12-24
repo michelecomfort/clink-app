@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Routes, Route, NavLink } from 'react-router-dom';
 import RecipeBook from './RecipeBook';
-import Cocktail from './Cocktail';
 import Recipe from './Recipe'
 import SearchByLiquor from './SearchByLiquor';
 import '../CSS/App.css';
@@ -13,7 +12,8 @@ class App extends Component {
     super()
     this.state = {
       recipes: recipeData,
-      recipeCard: {}
+      recipeCard: {},
+      recipesByLiquor: []
     }
   }
 
@@ -24,18 +24,24 @@ class App extends Component {
     this.setState({ recipeCard: recipeCard })
   }
 
+  showCocktails = (drinks) => {
+    
+    if (drinks) {
+      this.setState({ recipesByLiquor: drinks})
+    }
+}
+
   render() {
-    console.log(this.state.recipeCard)
     return (
       <main className="App">
         <header className="App-header">
           <NavLink to={`/`} style={{textDecoration: 'none', color: "white"}} >
             <h1 className='title'>T's Provisions</h1>
           </NavLink>
-          <SearchByLiquor />
+          <SearchByLiquor recipes={this.state.recipes} showCocktails={this.showCocktails}/>
         </header>
         <Routes>
-          <Route path="/" element={<RecipeBook recipes={this.state.recipes} displayRecipe={this.displayRecipe}/>}/>
+          <Route path="/" element={<RecipeBook recipes={this.state.recipes} recipesByLiquor={this.state.recipesByLiquor} displayRecipe={this.displayRecipe}/>}/>
           <Route path="/:recId" element={<Recipe recipe={this.state.recipeCard}/>}/>
         </Routes>
       

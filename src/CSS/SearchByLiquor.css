@@ -10,3 +10,9 @@
     -webkit-appearance: none;
     -moz-appearance: none;
 }
+
+@media screen and (max-width: 420px) {
+    .liquor-select {
+        margin-bottom: 3%;
+    }
+}

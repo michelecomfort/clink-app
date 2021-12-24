@@ -22,3 +22,43 @@
     position: absolute;
     bottom: 32px;
 }
+
+@media screen and (max-width: 1200px) {
+    .cocktail-card-img {
+        width: 24vw;
+        height: 26vw;
+    }
+    .card-name {
+        bottom: 180px;
+        margin-left: 5%;
+        width: 90%;
+    }
+}
+  
+@media screen and (max-width: 770px) {
+    .cocktail-card-img {
+        width: 40vw;
+        height: 48vw;
+    }
+    .card-name {
+        bottom: 120px;
+        margin-left: 0;
+        width: 100%;
+    }
+}
+  
+@media screen and (max-width: 420px) {
+    .cocktail-card {
+        margin: 60px 0;
+    }
+    .cocktail-card-img {
+        width: 74vw;
+        height: 86vw;
+
+    }
+    .card-name {
+        bottom: -16px;
+        margin-left: 13%;
+        width: 74%;
+    }
+}

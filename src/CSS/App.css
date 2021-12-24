@@ -14,3 +14,36 @@
   font-weight: 500;
   letter-spacing: 24px;
 }
+
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 5.6vw;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .title {
+    font-size: 9vw;
+  }
+  body {
+    overflow: scroll;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .title {
+    font-size: 12vw;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .App-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 9vw;
+    letter-spacing: 8px;
+    margin-bottom: 1%;
+  }
+}

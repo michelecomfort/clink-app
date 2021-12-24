@@ -2,7 +2,6 @@ import React from 'react';
 import '../CSS/Recipe.css'
 
 const Recipe = ({ recipe }) => {
-    console.log(recipe)
     const { id, name, image, ingredients, instructions, garnish } = recipe
     const parts = ingredients.map(ing => {
         return <p>- {ing}</p>
@@ -22,6 +21,7 @@ const Recipe = ({ recipe }) => {
                     <section className='orders'>
                         <p className='orders-heading'>orders</p>
                         <p className='steps'>{directions}</p>
+                        <p>Garnish: {garnish}</p>
                     </section>
                 </div>
             </section>
